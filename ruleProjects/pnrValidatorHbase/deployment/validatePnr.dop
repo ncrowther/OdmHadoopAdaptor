@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" xmlns:ilog.rules.studio.model.query.extractor="http://ilog.rules.studio/model/query/extractor.ecore" rulesetName="validatePnr" usingRuleflow="true" ruleflowName="mainflow" targetRuleProjectName="pnrValidator">
+  <name>validatePnr</name>
+  <uuid>a9b72bb7-c40a-465a-962f-bc2022035893</uuid>
+  <referencedVariables variableName="flightDate" variableSetName="vars">
+    <variableSet href="../rules/vars.var#2cc43caf-7599-48b7-b131-f4ecd6617bde"/>
+  </referencedVariables>
+  <referencedVariables variableName="dateOfBirth" variableSetName="vars">
+    <variableSet href="../rules/vars.var#2cc43caf-7599-48b7-b131-f4ecd6617bde"/>
+  </referencedVariables>
+  <referencedVariables variableName="route" variableSetName="vars">
+    <variableSet href="../rules/vars.var#2cc43caf-7599-48b7-b131-f4ecd6617bde"/>
+  </referencedVariables>
+  <referencedVariables variableName="customerName" variableSetName="vars">
+    <variableSet href="../rules/vars.var#2cc43caf-7599-48b7-b131-f4ecd6617bde"/>
+  </referencedVariables>
+  <referencedVariables variableName="passportNumber" variableSetName="vars">
+    <variableSet href="../rules/vars.var#2cc43caf-7599-48b7-b131-f4ecd6617bde"/>
+  </referencedVariables>
+  <referencedVariables variableName="flightNumber" variableSetName="vars">
+    <variableSet href="../rules/vars.var#2cc43caf-7599-48b7-b131-f4ecd6617bde"/>
+  </referencedVariables>
+  <referencedVariables variableName="response" variableSetName="vars" direction="OUT">
+    <variableSet href="../rules/vars.var#2cc43caf-7599-48b7-b131-f4ecd6617bde"/>
+  </referencedVariables>
+  <ruleflow href="../rules/mainflow.rfl#71038ea2-a06d-413e-aa9d-dd75cd55804f"/>
+  <extractor xsi:type="ilog.rules.studio.model.query.extractor:QueryExtractor" name="validatePnr_extractor" validator="Default Validator"/>
+  <targetRuleProject href="../../pnrValidator#2af11753-270e-45c9-ae1e-24977a33bcf7"/>
+</com.ibm.rules.studio.model.decisionservice:Operation>

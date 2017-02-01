@@ -1,0 +1,11 @@
+create 'passengers', 'cf'
+
+scan 'passengers'
+
+get 'passengers', 'P123456789'
+
+disable 'passengers'
+
+drop 'passengers'
+
+

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>determineTravelDate</name>
+  <uuid>a77881e6-1671-496e-9d63-b77b91178bb1</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[definitions
+    set passengers to "passengers" ;
+then
+    set 'last travel date' to get value from table passengers , key 'passport number' , family "cf" , column "lastTravelDate" ;
+    put 'flight date' into table passengers , key 'passport number' , family "cf" , column "lastTravelDate" ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

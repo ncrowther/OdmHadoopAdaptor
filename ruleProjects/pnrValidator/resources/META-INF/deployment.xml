@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><project-deployment xmlns="http://www.ibm.com/rules/ruleproject/deployment" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <config serverURL="http://localhost:9081/res">
+        <xom>
+            <uri value="reslib://localRes_1.0/1.0"/>
+        </xom>
+    </config>
+<config serverURL="http://localhost:7001/res/">
+        <xom>
+            <uri value="reslib://Weblogic_Local_Res_1.0/1.0"/>
+        </xom>
+    </config>
+</project-deployment>

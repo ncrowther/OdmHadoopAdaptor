@@ -1,0 +1,6 @@
+# Vocabulary Properties
+uuid = c98de3c7-028a-4af9-a038-323d49bc88a4
+
+# DateHelper
+DateHelper#concept.label = date helper
+DateHelper.getAgeFromDateOfBirth(java.util.Date)#phrase.navigation = the age from {0}

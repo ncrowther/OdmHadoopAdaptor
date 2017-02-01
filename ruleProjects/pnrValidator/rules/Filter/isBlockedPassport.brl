@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>isBlockedPassport</name>
+  <uuid>7ac2d4df-c096-4017-95e1-86374df636a5</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[
+if
+    'passport number' is one of {"F607631362", "D574829235"}
+then
+    set response to response + ",Passenger: " + 'customer name' + 
+    " on watch list.  Flight " +  'flight number' + 
+    " flying at " + 'flight date' + " passport " + 'passport number' ;
+]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

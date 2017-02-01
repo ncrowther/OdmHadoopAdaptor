@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>isFlyingFromDeniedAirportAndBetween20and30</name>
+  <uuid>e4110c43-79f7-4969-b338-2419d4fa43b3</uuid>
+  <documentation><![CDATA[]]></documentation>
+  <locale>en_US</locale>
+  <definition><![CDATA[definitions
+    set 'age' to the age from 'date of birth'   ;
+    
+if
+     'route' is one of {"BOCJFK", "BOCLAX"}
+    and age is between 20 and 30
+then
+     set response to response +  "Passenger: "  + 'customer name'  + 
+    " fits profile on flight " + 'flight number' + 
+    " route " + 'route'  + " flying on " + 'flight date'  ;
+    
+    
+]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

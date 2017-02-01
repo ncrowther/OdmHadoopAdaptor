@@ -1,0 +1,27 @@
+<b2x:translation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://schemas.ilog.com/JRules/1.1/Translation ilog/rules/schemas/1_1/b2x.xsd"
+        xmlns:b2x="http://schemas.ilog.com/JRules/1.1/Translation">
+    <id>489b6e9b-a879-4ffc-a99d-4169836402ad</id>
+    <class>
+        <businessName>DateHelper</businessName>
+        <executionName>com.sun.jndi.ldap.Obj</executionName>
+        <method>
+            <name>getAgeFromDateOfBirth</name>
+            <parameter type="java.util.Date"/>
+            <body language="irl"><![CDATA[
+            if (birthDate == null) {
+			return 0;
+		}
+
+		long ageInMillis = new java.util.Date().getTime() - birthDate.getTime();
+
+		long age = (((((ageInMillis / 1000) / 60) / 60) / 24) / 365);
+
+		// System.out.println("BirthDate: " + birthDate);
+		// System.out.println("age: " + age);
+
+		return (int) age;
+            ]]></body>
+        </method>
+    </class>
+</b2x:translation>

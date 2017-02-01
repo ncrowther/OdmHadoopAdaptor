@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Licensed Materials - Property of IBM                           -->
+<!-- 5724-Y00 5724-Y17 5655-V84                                     -->
+<!-- Copyright IBM Corp. 1987, 2010. All Rights Reserved            -->
+<!-- US Government Users Restricted Rights - Use, duplication or    -->
+<!-- disclosure restricted by GSA ADP Schedule Contract with        -->
+<!-- IBM Corp.                                                      -->
+
+<project basedir="." default="buildhbasefacade">
+
+	<description>Build hbase facade</description>
+
+	<property file="build.properties" />
+
+	<!-- Properties -->
+	<property name="src.dir" location="${basedir}/src" />
+	<property name="classes.dir" location="${basedir}/classes" />
+	<property name="hadoop.common.lib" location="${hadoop.common.lib.dir}/hadoop-common-2.7.3.jar" />
+	<property name="hbase.lib" location="${basedir}/lib/hbase-0.96.0.jar" />
+	<property name="output.dir" location="${basedir}/output" />
+
+	<!-- classpath -->
+	<path id="libpath">
+		<pathelement location="${classes.dir}" />
+		<pathelement location="${hadoop.common.lib}" />
+		<pathelement location="${hadoop.commons.io.lib}" />
+		<pathelement location="${http.core.lib}" />
+		<pathelement location="${http.client.lib}" />
+		<pathelement location="${http.jacksoncore.lib}" />
+		<pathelement location="${http.jacksonmapper.lib}" />
+		<pathelement location="${hadoop.mapreduce.core.lib}" />
+	    <pathelement location="${hadoop.mapreduce.common.lib}" />
+		<pathelement location="${hadoop.mapreduce.common.lib}" />
+		<pathelement location="${hbase.lib}" />
+	</path>
+
+	<!-- build -->
+	<target name="build">
+		<mkdir dir="${classes.dir}" />
+		<javac srcdir="${src.dir}" destdir="${classes.dir}" classpathref="libpath" debug="on" deprecation="on" includeantruntime="false" fork="true" />
+	</target>
+
+	<!-- Build  jar -->
+	<target name="buildhbasefacade" depends="clean,build">
+		
+		<jar destfile="${basedir}/hbase-facade.jar">
+			<fileset dir="${classes.dir}" />
+		</jar>
+	</target>
+
+	<!-- clean -->
+	<target name="clean">
+		<delete dir="${classes.dir}" />
+		<delete dir="${output.dir}" />
+	</target>
+
+</project>

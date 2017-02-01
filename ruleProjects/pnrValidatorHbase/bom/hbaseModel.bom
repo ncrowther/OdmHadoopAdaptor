@@ -1,0 +1,26 @@
+
+property loadGetterSetterAsProperties "true"
+property origin "xom:/pnrValidator//hbase-facade"
+property uuid "c87e658b-bba1-4e06-86de-dae168cafd61"
+package hfacade;
+
+
+public class QueryFacade
+{
+    public QueryFacade();
+    public static void close();
+    public static string getValue(string table, string key, string family, string column)
+                throws java.io.IOException;
+    public static boolean isOrderedDuplicate(string arg1, string arg2);
+    public static boolean keyExists(string table, string key)
+                throws java.io.IOException;
+    public static boolean keyExists(string arg1, string arg2, boolean arg3)
+                throws java.io.IOException;
+    public static boolean partialKeyExists(string arg1, string arg2)
+                throws java.io.IOException;
+    public static void putValue(string table, string key, string family, string column, string value)
+                throws java.io.IOException;
+    public static boolean valueExists(string arg1, string arg2, string arg3, string arg4, string arg5)
+                throws java.io.IOException;
+}
+

@@ -1,0 +1,8 @@
+
+property uuid "d322a356-8c4f-4b9d-9f1b-e439ec9b6f9f"
+
+public class DateHelper
+{
+    public static final int getAgeFromDateOfBirth(java.util.Date birthDate);
+}
+

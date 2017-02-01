@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.base:VariableSet xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore">
+  <name>vars</name>
+  <uuid>c9da8bde-6447-444f-810c-94c64987802b</uuid>
+  <variables name="flightDate" type="java.lang.String" initialValue="" verbalization="flight date"/>
+  <variables name="dateOfBirth" type="java.util.Date" initialValue="" verbalization="date of birth"/>
+  <variables name="route" type="java.lang.String" initialValue="" verbalization="route"/>
+  <variables name="customerName" type="java.lang.String" initialValue="" verbalization="customer name"/>
+  <variables name="passportNumber" type="java.lang.String" initialValue="" verbalization="passport number"/>
+  <variables name="flightNumber" type="java.lang.String" initialValue="" verbalization="flight number"/>
+  <variables name="response" type="java.lang.String" initialValue="&quot;&quot;" verbalization="response"/>
+</ilog.rules.studio.model.base:VariableSet>

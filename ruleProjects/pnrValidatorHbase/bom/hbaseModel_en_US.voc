@@ -1,0 +1,8 @@
+# Vocabulary Properties
+uuid = 148c5174-9d75-4554-8a2e-50f98c478edf
+
+# hfacade.QueryFacade
+hfacade.QueryFacade#concept.label = query facade
+hfacade.QueryFacade.getValue(java.lang.String,java.lang.String,java.lang.String,java.lang.String)#phrase.navigation = get value from table {0}, key {1}, family {2}, column {3}
+hfacade.QueryFacade.keyExists(java.lang.String,java.lang.String)#phrase.navigation = key {1} exists in {0}
+hfacade.QueryFacade.putValue(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)#phrase.action = put {4} into table {0}, key {1},  family {2}, column {3}

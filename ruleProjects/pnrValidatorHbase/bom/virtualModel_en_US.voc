@@ -1,0 +1,7 @@
+# Vocabulary Properties
+uuid = f279f1ff-6643-4536-8314-d97881e86e88
+
+# DateHelper
+DateHelper#concept.label = date helper
+DateHelper.getAgeFromDateOfBirth(java.util.Date)#phrase.navigation = the age from {0}
+DateHelper.getMonthsBetweenDates(java.lang.String,java.lang.String)#phrase.navigation = the months between dates {0} and {1}

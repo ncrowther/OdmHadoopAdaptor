@@ -1,0 +1,9 @@
+
+property uuid "452c4bf7-6efc-44da-a8a6-ab1815ce85aa"
+
+public class DateHelper
+{
+    public static final int getAgeFromDateOfBirth(java.util.Date birthDate);
+    public static final int getMonthsBetweenDates(string date1, string date2);
+}
+

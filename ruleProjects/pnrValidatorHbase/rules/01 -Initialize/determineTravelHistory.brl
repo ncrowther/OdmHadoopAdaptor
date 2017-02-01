@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>determineTravelHistory</name>
+  <uuid>f3793b2d-51d1-4203-aa96-aaeb170187b0</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[definitions
+    set passengers to "passengers" ;
+    set pastRoutes to get value from table passengers , key 'passport number' , family "cf" , column "pastRoutes" ;
+if
+    pastRoutes is null
+then
+    set travelHistory to route ;
+    put travelHistory into table passengers , key 'passport number' , family "cf" , column "pastRoutes" ;
+else
+    set travelHistory to pastRoutes  + route ;
+    put travelHistory into table passengers , key 'passport number' , family "cf" , column "pastRoutes" ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>
