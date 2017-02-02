@@ -23,13 +23,9 @@ return (int)age;
             <parameter type="java.lang.String"/>
             <parameter type="java.lang.String"/>
             <body language="arl"><![CDATA[
-            //if (date1.length() != 10 || date2.length() != 10) {
-//	return -1;  //One or more bad dates
-//}
-
-java.text.DateFormat df = new java.text.SimpleDateFormat("yyyy-MM-dd");
-java.util.Date startDate = df.parse(date1);
-java.util.Date endDate = df.parse(date2);
+            java.text.DateFormat df = new java.text.SimpleDateFormat("yyyy-MM-dd");
+java.util.Date startDate = df.parse(startDateStr);
+java.util.Date endDate = df.parse(endDateStr);
 
 java.util.Calendar startCalendar = new java.util.GregorianCalendar();
 startCalendar.setTime(startDate);

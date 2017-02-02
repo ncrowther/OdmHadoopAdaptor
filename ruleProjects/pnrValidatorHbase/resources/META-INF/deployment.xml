@@ -21,7 +21,7 @@
     </config>
 <config serverURL="https://brsv2-ae05805f.ng.bluemix.net/res">
         <xom>
-            <uri value="reslib://validatePnrApp_1.0/1.4"/>
+            <uri value="reslib://validatePnrApp_1.0/1.5"/>
         </xom>
     </config>
 </project-deployment>

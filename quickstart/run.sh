@@ -4,7 +4,6 @@
 hdfs dfs -rm output/*
 hdfs dfs -rmdir output
 
-
 # Run the Hadoop job
 #yarn jar  odmhadoop.jar mapreduce.OdmHadoopAdaptor \
 #             inputDir [hdfs input directory]
@@ -27,7 +26,7 @@ yarn jar  odmhadoop.jar mapreduce.OdmHadoopAdaptor \
              resAdmin \
              skn9o0rwqng2 \
              "Basic cmVzQWRtaW46c2tuOW8wcndxbmcy" \
-             true\
+             true \
              true
 
 # Display the result

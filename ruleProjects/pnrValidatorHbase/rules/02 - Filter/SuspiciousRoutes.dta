@@ -9,7 +9,7 @@
     <Preconditions>
       <Text><![CDATA[definitions]]>&#13;<![CDATA[
     set 'age' to the age from 'date of birth';]]>&#13;<![CDATA[
-    set 'monthsBetweenTravel' to the months between dates 'flight date' and 'last travel date' ;]]></Text>
+    set 'monthsBetweenTravel' to the months between dates 'last travel date' and 'flight date';]]></Text>
     </Preconditions>
     <Structure>
       <ConditionDefinitions>
@@ -60,7 +60,7 @@
                   <ActionSet>
                     <Action DefId="A0">
                       <Expression>
-                        <Param><![CDATA["ISIS TRAINING"]]></Param>
+                        <Param><![CDATA["Terrorist"]]></Param>
                       </Expression>
                     </Action>
                   </ActionSet>
@@ -88,7 +88,7 @@
                   <ActionSet>
                     <Action DefId="A0">
                       <Expression>
-                        <Param><![CDATA["DRUG MULE"]]></Param>
+                        <Param><![CDATA["Drug Mule"]]></Param>
                       </Expression>
                     </Action>
                   </ActionSet>
@@ -103,13 +103,13 @@
   <Resources DefaultLocale="en_US">
     <ResourceSet Locale="en_US">
       <Data Name="Definitions(A0)#HeaderText"><![CDATA[Suspicion]]></Data>
-      <Data Name="Definitions(A0)#Width"><![CDATA[434]]></Data>
+      <Data Name="Definitions(A0)#Width"><![CDATA[215]]></Data>
       <Data Name="Definitions(C0)#HeaderText"><![CDATA[Age]]></Data>
-      <Data Name="Definitions(C0)#Width"><![CDATA[436]]></Data>
+      <Data Name="Definitions(C0)#Width"><![CDATA[216]]></Data>
       <Data Name="Definitions(C1)#HeaderText"><![CDATA[Route]]></Data>
-      <Data Name="Definitions(C1)#Width"><![CDATA[285]]></Data>
+      <Data Name="Definitions(C1)#Width"><![CDATA[146]]></Data>
       <Data Name="Definitions(C2)#HeaderText"><![CDATA[Months Between Travel]]></Data>
-      <Data Name="Definitions(C2)#Width"><![CDATA[225]]></Data>
+      <Data Name="Definitions(C2)#Width"><![CDATA[119]]></Data>
     </ResourceSet>
   </Resources>
 </DT></definition>
