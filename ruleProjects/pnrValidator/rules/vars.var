@@ -9,4 +9,5 @@
   <variables name="passportNumber" type="java.lang.String" initialValue="" verbalization="passport number"/>
   <variables name="flightNumber" type="java.lang.String" initialValue="" verbalization="flight number"/>
   <variables name="response" type="java.lang.String" initialValue="&quot;&quot;" verbalization="response"/>
+  <variables name="radicalisation" type="int" initialValue="11" verbalization="radicalization"/>
 </ilog.rules.studio.model.base:VariableSet>

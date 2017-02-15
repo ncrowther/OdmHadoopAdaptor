@@ -21,6 +21,11 @@
           <Package Name="01 -Initialize"/>
         </RuleList>
       </RuleTask>
+      <RuleTask ExecutionMode="Fastpath" ExitCriteria="None" Identifier="00 - prefilter" Ordering="Default">
+        <RuleList>
+          <Package Name="00 - prefilter"/>
+        </RuleList>
+      </RuleTask>
       <StopTask Identifier="task_1"/>
     </TaskList>
     <NodeList>
@@ -29,15 +34,22 @@
       <TaskNode Identifier="node_2" Task="Filter"/>
       <TaskNode Identifier="node_3" Task="01 -Initialize"/>
       <BranchNode Identifier="node_4"/>
+      <BranchNode Identifier="node_5"/>
+      <TaskNode Identifier="node_6" Task="00 - prefilter"/>
     </NodeList>
     <TransitionList>
-      <Transition Identifier="transition_0" Source="node_0" Target="node_3"/>
+      <Transition Identifier="transition_0" Source="node_0" Target="node_6"/>
       <Transition Identifier="transition_1" Source="node_2" Target="node_1"/>
       <Transition Identifier="transition_2" Source="node_3" Target="node_4"/>
       <Transition Identifier="transition_3" Source="node_4" Target="node_2">
         <Conditions Language="bal"><![CDATA['last travel date' is not null ]]></Conditions>
       </Transition>
       <Transition Identifier="transition_4" Source="node_4" Target="node_1"/>
+      <Transition Identifier="transition_5" Source="node_5" Target="node_3"/>
+      <Transition Identifier="transition_6" Source="node_6" Target="node_5"/>
+      <Transition Identifier="transition_7" Source="node_6" Target="node_1">
+        <Conditions Language="bal"><![CDATA[ignore]]></Conditions>
+      </Transition>
     </TransitionList>
   </Body>
   <Resources>
@@ -46,28 +58,38 @@
       <Data Name="transition_3#label">last travel date set</Data>
       <Data Name="node_2#height">40.0</Data>
       <Data Name="node_0#height">21.0</Data>
-      <Data Name="node_4#x">51.000015</Data>
-      <Data Name="node_4#y">192.60945</Data>
+      <Data Name="node_4#x">82.499954</Data>
+      <Data Name="node_4#y">382.42603</Data>
       <Data Name="node_4#name">node_6</Data>
+      <Data Name="node_6#height">53.402344</Data>
       <Data Name="node_3#width">102.0</Data>
-      <Data Name="node_3#y">97.70117</Data>
+      <Data Name="node_3#y">287.51773</Data>
       <Data Name="node_3#name">node_3</Data>
       <Data Name="node_1#name">node_2</Data>
-      <Data Name="node_3#x">51.0</Data>
-      <Data Name="node_1#width">21.000002</Data>
+      <Data Name="transition_7#label">ignore</Data>
+      <Data Name="node_3#x">89.0</Data>
+      <Data Name="node_1#width">20.000004</Data>
       <Data Name="node_0#width">21.0</Data>
       <Data Name="node_0#name">node_0</Data>
+      <Data Name="node_6#y">97.70117</Data>
+      <Data Name="node_5#height">36.414215</Data>
+      <Data Name="node_6#x">51.0</Data>
       <Data Name="node_2#name">node_2</Data>
+      <Data Name="node_5#name">node_6</Data>
       <Data Name="node_2#width">102.0</Data>
+      <Data Name="node_5#width">36.414215</Data>
       <Data Name="node_0#y">10.5</Data>
       <Data Name="node_0#x">51.0</Data>
-      <Data Name="node_4#height">36.414215</Data>
-      <Data Name="node_1#x">51.0</Data>
+      <Data Name="node_4#height">36.414185</Data>
+      <Data Name="node_6#width">102.0</Data>
+      <Data Name="node_1#x">61.5</Data>
       <Data Name="node_4#width">36.414215</Data>
-      <Data Name="node_1#y">361.31656</Data>
-      <Data Name="node_1#height">20.99999</Data>
-      <Data Name="node_2#x">89.0</Data>
-      <Data Name="node_2#y">280.81656</Data>
+      <Data Name="node_1#y">560.63306</Data>
+      <Data Name="node_1#height">19.999987</Data>
+      <Data Name="node_2#x">120.5</Data>
+      <Data Name="node_2#y">470.6331</Data>
+      <Data Name="node_5#y">192.60945</Data>
+      <Data Name="node_5#x">89.000015</Data>
     </ResourceSet>
   </Resources>
   <Properties/>

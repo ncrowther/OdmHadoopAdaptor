@@ -4,8 +4,8 @@
   <uuid>a77881e6-1671-496e-9d63-b77b91178bb1</uuid>
   <locale>en_US</locale>
   <definition><![CDATA[definitions
-    set passengers to "passengers" ;
+    set passengersTable to "passengers" ;
 then
-    set 'last travel date' to get value from table passengers , key 'passport number' , family "cf" , column "lastTravelDate" ;
-    put 'flight date' into table passengers , key 'passport number' , family "cf" , column "lastTravelDate" ;]]></definition>
+    set 'last travel date' to get value from table passengersTable , key 'passport number' , family "cf" , column "lastTravelDate" ;
+    put 'flight date' into table passengersTable , key 'passport number' , family "cf" , column "lastTravelDate" ;]]></definition>
 </ilog.rules.studio.model.brl:ActionRule>
