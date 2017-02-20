@@ -2,7 +2,9 @@
 <ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
   <name>isBlockedPassportDisabled</name>
   <uuid>4ac2e42d-6a1a-485e-ad57-ec7463348bba</uuid>
-  <documentation><![CDATA[if
+  <documentation><![CDATA[// Watch list rule disabled
+
+if
    key 'passport number' exists in "passports"  
 then
     set response to "Passenger: " + 'customer name' + 

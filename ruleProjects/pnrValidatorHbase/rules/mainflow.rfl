@@ -16,12 +16,12 @@
           <Package Name="02 - Filter"/>
         </RuleList>
       </RuleTask>
-      <RuleTask ExecutionMode="Fastpath" ExitCriteria="None" Identifier="01 -Initialize" Ordering="Default">
+      <RuleTask ExecutionMode="Sequential" ExitCriteria="None" Identifier="01 -Initialize" Ordering="Default">
         <RuleList>
           <Package Name="01 -Initialize"/>
         </RuleList>
       </RuleTask>
-      <RuleTask ExecutionMode="Fastpath" ExitCriteria="None" Identifier="00 - prefilter" Ordering="Default">
+      <RuleTask ExecutionMode="Sequential" ExitCriteria="None" Identifier="00 - prefilter" Ordering="Default">
         <RuleList>
           <Package Name="00 - prefilter"/>
         </RuleList>
@@ -55,11 +55,11 @@
   <Resources>
     <ResourceSet Locale="en_US">
       <Data Name="node_3#height">53.402344</Data>
-      <Data Name="transition_3#label">last travel date set</Data>
+      <Data Name="transition_3#label">Last travel date set</Data>
       <Data Name="node_2#height">40.0</Data>
       <Data Name="node_0#height">21.0</Data>
-      <Data Name="node_4#x">82.499954</Data>
-      <Data Name="node_4#y">382.42603</Data>
+      <Data Name="node_4#x">82.500015</Data>
+      <Data Name="node_4#y">382.426</Data>
       <Data Name="node_4#name">node_6</Data>
       <Data Name="node_6#height">53.402344</Data>
       <Data Name="node_3#width">102.0</Data>
@@ -68,6 +68,7 @@
       <Data Name="node_1#name">node_2</Data>
       <Data Name="transition_7#label">ignore</Data>
       <Data Name="node_3#x">89.0</Data>
+      <Data Name="node_6#name">node_6</Data>
       <Data Name="node_1#width">20.000004</Data>
       <Data Name="node_0#width">21.0</Data>
       <Data Name="node_0#name">node_0</Data>
