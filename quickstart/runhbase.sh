@@ -29,10 +29,10 @@ yarn jar odmhadoop.jar mapreduce.OdmHadoopAdaptor -libjars ${HBASE_CLASSPATH} \
              output \
              passportNumber,customerName,dateOfBirth,flightNumber,flightDate,route \
              /validatePnrApp/1.0/validatePnr/1.0 \
-             brsv2-ae05805f.ng.bluemix.net \
+             brsv2-7a461af4.ng.bluemix.net \
              resAdmin \
-             skn9o0rwqng2 \
-             "Basic cmVzQWRtaW46c2tuOW8wcndxbmcy" \
+             1hv0ftlm0j9ys \
+             "Basic cmVzQWRtaW46MWh2MGZ0bG0wajl5cw=="\
              false \
              true
 
