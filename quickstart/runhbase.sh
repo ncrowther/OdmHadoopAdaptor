@@ -24,7 +24,7 @@ echo ${HBASE_CLASSPATH}
 #             blueMixMode [true|false]
 #             https [true|false]
 
-yarn jar odmhbasehadoop.jar mapreduce.OdmHadoopAdaptor -libjars ${HBASE_CLASSPATH} \
+yarn jar odmhadoop.jar mapreduce.OdmHadoopAdaptor -libjars ${HBASE_CLASSPATH} \
              input \
              output \
              passportNumber,customerName,dateOfBirth,flightNumber,flightDate,route \
