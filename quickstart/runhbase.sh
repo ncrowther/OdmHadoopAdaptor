@@ -1,4 +1,4 @@
-# Run OdmHadoop adaptor
+# Run OdmHadoop adaptor in embedded mode.  Use HBase as the persistence layer
 
 # Remove output folder
 hdfs dfs -rm output/*
