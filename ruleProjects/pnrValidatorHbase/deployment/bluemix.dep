@@ -2,7 +2,7 @@
 <com.ibm.rules.studio.model.decisionservice:Deployment xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" ruleAppName="validatePnrApp" managingXom="true">
   <name>bluemix</name>
   <uuid>bf4cb90f-015d-4af0-bdb2-f07557fb8feb</uuid>
-  <targets label="Bluemix"/>
+  <targets label="Bluemix RES"/>
   <operations operationName="validatePnr">
     <operation href="validatePnr.dop#a9b72bb7-c40a-465a-962f-bc2022035893"/>
     <properties key="ruleset.version">

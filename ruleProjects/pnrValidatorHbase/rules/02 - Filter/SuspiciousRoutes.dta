@@ -48,6 +48,42 @@
       <Partition DefId="C0">
         <Condition>
           <Expression>
+            <Param><![CDATA[16]]></Param>
+            <Param><![CDATA[60]]></Param>
+          </Expression>
+          <Partition DefId="C2">
+            <Condition>
+              <Expression>
+                <Text><![CDATA[<a number> is at least <a number>]]></Text>
+                <Param><![CDATA[1]]></Param>
+              </Expression>
+              <Partition DefId="C3">
+                <Condition>
+                  <Expression>
+                    <Text><![CDATA[<a number> is more than <a number>]]></Text>
+                    <Param><![CDATA[5]]></Param>
+                  </Expression>
+                  <Partition DefId="C1">
+                    <Condition>
+                      <Expression>
+                        <Param><![CDATA["LAXMEXMEXLAX"]]></Param>
+                      </Expression>
+                      <ActionSet>
+                        <Action DefId="A0">
+                          <Expression>
+                            <Param><![CDATA["D254"]]></Param>
+                          </Expression>
+                        </Action>
+                      </ActionSet>
+                    </Condition>
+                  </Partition>
+                </Condition>
+              </Partition>
+            </Condition>
+          </Partition>
+        </Condition>
+        <Condition>
+          <Expression>
             <Param><![CDATA[12]]></Param>
             <Param><![CDATA[50]]></Param>
           </Expression>
@@ -124,15 +160,15 @@
   <Resources DefaultLocale="en_US">
     <ResourceSet Locale="en_US">
       <Data Name="Definitions(A0)#HeaderText"><![CDATA[Response Code]]></Data>
-      <Data Name="Definitions(A0)#Width"><![CDATA[313]]></Data>
+      <Data Name="Definitions(A0)#Width"><![CDATA[211]]></Data>
       <Data Name="Definitions(C0)#HeaderText"><![CDATA[Age]]></Data>
-      <Data Name="Definitions(C0)#Width"><![CDATA[314]]></Data>
+      <Data Name="Definitions(C0)#Width"><![CDATA[211]]></Data>
       <Data Name="Definitions(C1)#HeaderText"><![CDATA[Route]]></Data>
-      <Data Name="Definitions(C1)#Width"><![CDATA[257]]></Data>
-      <Data Name="Definitions(C2)#HeaderText"><![CDATA[Months Between Travel]]></Data>
-      <Data Name="Definitions(C2)#Width"><![CDATA[236]]></Data>
+      <Data Name="Definitions(C1)#Width"><![CDATA[182]]></Data>
+      <Data Name="Definitions(C2)#HeaderText"><![CDATA[Months Away]]></Data>
+      <Data Name="Definitions(C2)#Width"><![CDATA[169]]></Data>
       <Data Name="Definitions(C3)#HeaderText"><![CDATA[Score]]></Data>
-      <Data Name="Definitions(C3)#Width"><![CDATA[144]]></Data>
+      <Data Name="Definitions(C3)#Width"><![CDATA[119]]></Data>
     </ResourceSet>
   </Resources>
 </DT></definition>
